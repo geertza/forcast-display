@@ -1,33 +1,146 @@
-.forecastBox{
-    width: 50px;
-    height: 50px;
-    background-color: cadetblue;
-    /* position: relative; */
-    bottom: 10px;
-}
+
 
 * {
-    box-sizing: border-box;}
+    box-sizing: border-box; 
+    color: #ecbd2c ;
+   
+  }
+    body {
+      z-index: -9;
+      background-color: darkblue;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: nowrap;
-        background-color: DodgerBlue;
+        
         height: 40vh;
         /* background-color: blue; */
         position: absolute;
-        bottom: 20vh;
+        bottom: 0vh;
         width: 65vw;
         right: 0px;
       }
       
-      .flex-container > div {
-        background-color: #f1f1f1;
+      .forecastContainer {
+        /* background-color: blue; */
         width: 40%;
-        height: 80%;
+        height: 60%;
         bottom: 10px;
         margin: 10px;
         text-align: center;
         line-height: 75px;
         font-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+       
+       
+        
       }
+      .forecastTemp{
+        font-size: 4vw;
+        bottom:-10%;
+        position: relative;
+      }
+      .icon2 {
+        width: 100%;
+        
+      }
+      
+      .header{
+        /* background-color: cadetblue; */
+        /* text-align: center; */
+        
+        width: 100vw;
+        height: 20vh;
+        position: absolute;
+        top: 0px;
+       
+    }
+     h1 {
+        font-size: 45px;
+        text-align: center;
+        
+    }
+    h2 {
+      text-align: center;
+      font-size: 4vw;
+      position: relative;
+      top: -10%;
+      left:-25%;
+    }
+    h3 {
+      position: absolute;
+      top: -25%;
+      right:0%;
+      font-size: 3vw;
+    }
+    .temp{
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      font-size: 6vw;
+      color: darkgoldenrod;
+      
+    }
+
+    
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        position: absolute;
+        bottom: 0%;
+        width:100%;
+        font-size: 2vw;
+        text-align: center;
+        }
+    
+    #search{
+        width: 35vw;
+        height: 70vh;
+       position: absolute;
+        left:0px;
+        top: 10vh;
+    }
+    #searchText{
+    width: 50%;
+    font-size: 2vw;
   
+
+    }
+
+    #submit {
+      height: 4vh;  
+      border-radius: 10%;
+        width: 20%;
+    }
+    #today{
+        width: 65vw;
+        height: 50vh;
+        position: absolute;
+        right: 0px;
+        top:10vh;
+        border-width: 3px;
+        padding: 10px;
+      
+        
+         background-repeat: no-repeat;
+         background-position: center;
+          background-size: contain;
+    }
+   
+    
+    @media screen and (max-width: 800px){
+        .flex-container{
+            width: 100%;
+        }
+        #search{
+           height:  55vh;
+        }
+        }
+        
+   

@@ -19,10 +19,20 @@
         <input type="submit" id="submit" ></input>
     </div>
     <div class="column container" id="content">
-        <div class= "container row" id="currentWeather">
-            <div class="cityInfo"></div>
+        <div class= "container row" id="today" >
+            <h3></h3>
             <h2>      </h2>
-            <img >      <img>
+            <div class="temp"></div>
+            <div class= "grid-container" >
+              <div  class= 'grid-item'>Humidity</div>
+              <div  class= 'grid-item'>Wind Speed</div>
+              <div  class= 'grid-item'>U.V Index</div>
+              <div  class= 'grid-item' id="humidity"></div>
+              <div  class= 'grid-item' id='wind'></div>
+              <div  class= 'grid-item' id="uv"> </div>
+            </div>
+           
+           
             <div class="currentWeather"> </div>
         </div>
     </div>
@@ -37,76 +47,7 @@
     
 </body>
 <style>
-     .header{
-        /* background-color: cadetblue; */
-        /* text-align: center; */
-        
-        width: 100vw;
-        height: 20vh;
-        position: absolute;
-        top: 0px;
-       
-    }
-     h1 {
-        font-size: 45px;
-        text-align: center;
-        background-color: cadetblue;
-    }
-        
     
-    #search{
-        width: 35vw;
-        height: 70vh;
-        background-color: aqua;
-        position: absolute;
-        left:0px;
-        top: 10vh;
-    }
-    #searchText{
-    width: 100%;
-    height: 200px;
-
-    }
-
-    #submit {
-        height: 200px;
-        width: 100%;
-    }
-    #content{
-        width: 65vw;
-        height: 55vh;
-        background-color: burlywood;
-        position: absolute;
-        right: 0px;
-        top:10vh;
-    }
-
-    #currentWeather {
-        height: 55vh;
-        border-width: 3px;
-        padding: 10px;
-        border-color: black;
-        border-style: double;
-        
-    }
-    #flex {
-        height: 35vh;
-        /* background-color: blue; */
-        position: absolute;
-        bottom: 0px;
-        width: 65vw;
-        right: 0px;
-    }
-    
-    @media screen and (max-width: 800px){
-        .flex-container{
-            width: 100%;
-        }
-        #search{
-           height:  55vh;
-        }
-        }
-   
    
     
 </style>
