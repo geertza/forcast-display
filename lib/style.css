@@ -34,7 +34,7 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
-       
+       font-size: 2vw;
        
         
       }
@@ -49,8 +49,7 @@
       }
       
       .header{
-        /* background-color: cadetblue; */
-        /* text-align: center; */
+       
         
         width: 100vw;
         height: 20vh;
@@ -59,21 +58,23 @@
        
     }
      h1 {
-        font-size: 45px;
+        font-size: 6vw;
         text-align: center;
+        position: relative;
+        top: -2vh;
         
     }
     h2 {
       text-align: center;
       font-size: 4vw;
       position: relative;
-      top: -10%;
+      top: 0%;
       left:-25%;
     }
     h3 {
       position: absolute;
       top: -25%;
-      right:0%;
+      right:10%;
       font-size: 3vw;
     }
     .temp{
@@ -109,7 +110,9 @@
     #searchText{
     width: 50%;
     font-size: 2vw;
-  
+      position: absolute;
+      left: 0px;
+      top: 20px;
 
     }
 
@@ -130,8 +133,14 @@
     }
    
     .savedSearch{
-      width: 80px;
-      height: 20px;
+      width: 65px;
+      height: 80px;
+      border-bottom-left-radius: 60%;
+      border-bottom-right-radius: 60%;
+      color: black;
+      border-top-right-radius: 50%;
+      background-image: url(./water_texture_by_simplybackgrounds_dtcbja-pre.jpg);
+    transform: rotate(30deg);
     }
      #btn-grid{   
       display: grid;
@@ -139,17 +148,13 @@
         grid-template-rows: repeat(7, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        position: relative;
+        bottom:-10%;
         
-        
-    }
     
-    @media screen and (max-width: 800px){
-        .flex-container{
-            width: 100%;
+        
         }
-        #search{
-           height:  55vh;
-        }
-        }
+    
+  
         
    
